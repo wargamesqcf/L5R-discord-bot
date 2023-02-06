@@ -33,3 +33,5 @@ create a file named 'config.json' in the project folder and paste the code below
 >	"prefix": "~" 
 >}  
 # L5R-discord-bot
+# L5R-discord-bot
+# L5R-discord-bot
