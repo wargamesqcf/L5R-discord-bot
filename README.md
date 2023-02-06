@@ -32,6 +32,4 @@ create a file named 'config.json' in the project folder and paste the code below
 >	"token": "__Your Discord Bot Token Here__",  
 >	"prefix": "~" 
 >}  
-# L5R-discord-bot
-# L5R-discord-bot
-# L5R-discord-bot
+
