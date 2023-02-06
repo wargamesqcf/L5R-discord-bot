@@ -1,0 +1,17 @@
+{
+  "name": "onnotangu",
+  "version": "1.0.0",
+  "description": "A dice bot for L5R 4e",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "websocket": "^1.0.34",
+    "ws": "^8.12.0"
+  }
+}
