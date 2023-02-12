@@ -78,7 +78,6 @@
 @wargames,								~guide stances
 @wargames,								~guide maneuvers
 @Saelvarath,								~guide full attack
-<<<<<<< HEAD
 @wargames,								~guide conditions
 @wargames,								~battle opportunity random
 @wargames,								~battle opportunity random
@@ -121,6 +120,3 @@
 @Saelvarath,								~s suzume bushi
 @Saelvarath,								~s suzume bushi 4
 @Saelvarath,								~4k4
-=======
-@wargames,								~guide conditions
->>>>>>> 9449e6c (	new file:   bot.js)

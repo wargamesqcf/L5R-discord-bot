@@ -39,9 +39,5 @@ client.on( Events.MessageCreate, message =>
 client.login( config.token );
 
 robot.load( path.resolve( __dirname, "commands" ) );
-<<<<<<< HEAD
 robot.load( path.resolve( __dirname, "guides" ) );
 robot.load( path.resolve( __dirname, "schools" ) );
-=======
-robot.load( path.resolve( __dirname, "guides" ) );
->>>>>>> 9449e6c (	new file:   bot.js)
