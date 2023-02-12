@@ -16,8 +16,11 @@ class Robot extends EventEmitter
 		this.helpLine = new Set();
 		this.helpTopic = new Map();
 		this.guideMap = new Map();
+<<<<<<< HEAD
 		this.schoolMap = new Map();
 		this.battleMap = new Map();
+=======
+>>>>>>> 9449e6c (	new file:   bot.js)
 		this.rollMap = new Map();
 		{
 			let bot = this;
@@ -115,6 +118,7 @@ class Robot extends EventEmitter
 		this.guideMap.set( topic, content );
 		//console.log (`guide: ${topic}` );
 	}
+<<<<<<< HEAD
  
  	registerSchool ( topic, content )
 	{
@@ -130,6 +134,9 @@ class Robot extends EventEmitter
         //console.log (guide: ${topic} );
     }
  
+=======
+
+>>>>>>> 9449e6c (	new file:   bot.js)
 	makeRegExp( activator )
 	{
 		let source = "";

@@ -8,6 +8,7 @@ Form: \`${prefix}guide\` or \`${prefix}guide {query}\`
 	\`{query}\` *optional* the name of a mechanic you are having touble remembering
 Notes: will display a list of available queries if none is specified.`;
 
+<<<<<<< HEAD
 let schoolTopic = `__Mechanic Manual__
 Function: gives helpful information about various L5R Mechanics.
 Form: \`${prefix}school\` or \`${prefix}school {query}\`
@@ -23,12 +24,17 @@ Notes: will display a list of available queries if none is specified.`;
 
 	robot.registerHelpTopic( /g(?:uide)?/i, guideTopic );
 	robot.registerCommand( /g(?:uide)?\s(.*)?/i, `\`${prefix}guide {query}\`: __Mechanics Manual__ a helpful guide to various L5R Mechanics.`, ( message, test ) =>
+=======
+	robot.registerHelpTopic( /g(?:uide)?/i, guideTopic );
+	robot.registerCommand( /g(?:uide)?\s(.*)?/i, `\`${robot.config.prefix}guide {query}\`: __Mechanics Manual__ a helpful guide to various L5R Mechanics.`, ( message, test ) =>
+>>>>>>> 9449e6c (	new file:   bot.js)
 	{
 		let query = test[1];
 		query.toLowerCase();
 		let found = robot.guideMap.has( query );
 
 		if ( found )
+<<<<<<< HEAD
 		{
 			message.channel.send( `**${query}**\n${robot.guideMap.get( query )}` );
 		}
@@ -78,4 +84,23 @@ Notes: will display a list of available queries if none is specified.`;
 
 
 
+=======
+		{			
+			/*if (message.channel.type !== "dm") 
+				{	message.channel.send(`**${message.author} has consulted the mad dragon and they have ${ !found ? "not " : "" }responded**`);	}*/
+
+			if ( found )
+			{	
+				message.channel.send( `**${query}**\n${robot.guideMap.get( query )}` );
+			}
+		}
+		else
+		{
+			/*if (message.channel.type !== "dm")
+				{	message.channel.send(`**${message.author} has gazed into madness**`);	}*/
+
+			message.author.send(`**__List of available guides__**\n\t${ Array.from( robot.guideMap.keys() ).sort().join('\n\t') }`);
+		}
+	});
+>>>>>>> 9449e6c (	new file:   bot.js)
 }
