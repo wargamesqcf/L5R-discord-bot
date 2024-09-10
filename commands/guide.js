@@ -34,7 +34,7 @@ Notes: will display a list of available queries if none is specified.`;
 		}
 		else
 		{
-			message.author.send(`**__List of available guides__**\n\t${ Array.from( robot.guideMap.keys() ).sort().join('\n\t') }`);
+			message.author.send(`**__List of available guides__**\n${ Array.from( robot.guideMap.keys() ).sort().join(', ') }`);
 		}
 	});
 

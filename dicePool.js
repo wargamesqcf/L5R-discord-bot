@@ -21,7 +21,9 @@ class DicePool
 	printPool( wordy = true )
 	{
 		let msg = `${this.owner} rolled **`;
-		msg += this.bonus != 0 ? `${this.kept + this.bonus}** (${this.kept} + ${this.bonus})` : `${this.kept}**`;		
+		let rolledTotal = this.kept + this.bonus
+		msg += this.bonus != 0 ? 
+			`${rolledTotal}** (${this.kept} ${this.bonus > 0? "+": ""}${this.bonus})` : `${this.kept}**`;		
 
 		if ( wordy )
 		{
@@ -38,13 +40,13 @@ class DicePool
 					msg += ` (${this.TN} + ${this.raises} raises)`;
 				}
 			
-				if ( this.kept >= this.TN + this.raises * 5 )
+				if ( rolledTotal >= this.TN + this.raises * 5 )
 				{
-					msg += `\n**Success!** you passed by ${ this. kept - ( this.TN + this.raises * 5 ) }`
+					msg += `\n**Success!** you passed by ${ (this. kept + this.bonus) - ( this.TN + this.raises * 5 ) }`
 				}
 				else
 				{
-					msg += `\n**Failure!** you missed by ${ ( this.TN + this.raises * 5 ) - this. kept }`;
+					msg += `\n**Failure!** you missed by ${ ( this.TN + this.raises * 5 ) - (this. kept + this.bonus) }`;
 				}
 			}
 
