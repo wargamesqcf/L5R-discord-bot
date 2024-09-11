@@ -11,6 +11,9 @@ module.exports = (robot) =>
 		robot.registerGuide( "prone", "A prone character is lying flat on his back, side, or stomach, and cannot move, attack, or defend himself to full effect. A prone character immediately suffers a -10 penalty to his Armor TN against melee attacks. This penalty lasts until he stands up. He cannot use Move Actions, and may only adopt the Defense or Attack Stances. He cannot attack with large weapons, and suffers a -2k0 penalty to attacks with medium and small weapons. It requires a Simple Action to stand up from the prone position.");
 		robot.registerGuide( "stunned", "A character who is stunned may take no actions. Such a character has an Armor TN equal to 5 plus any bonuses from armor worn. The character may recover from this Status Effect by making a successful Earth Ring Roll at TN 20 during the Reaction Stage. If he fails this roll, the status ends at the end of the next Combat Round.");
 		robot.registerGuide( "fear", "Fear effects have ranks, from 1 to 10. To resist, roll Willpower against a TN of 5 + (5x the Fear rank). Samurai can add their Honor rank to the roll.\nIf the roll fails, the samurai suffers a penalty equal to the Fear rank in dice to all rolled dice. If the roll fails by 15 or more, the samurai either flees or cowers helplessly.");
+   
+   		robot.registerGuide( "unskilled", "Unskilled rolls are rolls where you attempt a skill roll but have zero ranks in that skill thus you just roll the trait. \nThis roll has addition restrictions such as dice do not explode when you roll 10s \nyou gain no benefits from raises, called or free.");
+      	robot.registerGuide( "emphases", "Emphases allows you to re-roll the inital 1's of a roll once per roll when the emphases would apply. It costs two EXP to buy an emphases.");
 	
 	//robot.registerGuide( "", "");
 
