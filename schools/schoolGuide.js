@@ -1,0 +1,12 @@
+module.exports = (robot) =>
+{
+	robot.registerSchool( "suzume bushi", ["The Sparrow Clan has never been a martial power, but Sparrow samurai will march into combat when the call comes. At the foundation of the clan the Suzume were Crane samurai, and their mastery with the katana remains a foundation of the school to this day. Their fighting style displays much about their philosophy on life, as they will take as much time as needed to make a perfect strike. \n\nThe Suzume Bushi's love of storytelling gives him an insight into battle. He uses that knowledge to see the ebb and flow of combat, allowing him to strike slower or faster to exploit his opponent's weaknesses. The Suzume Bushi has evolved far from the clan's roots in the Kakita Bushi School, creating abilities that center on Initiative in unique ways. \n\n`Benefit:` +1 Willpower \n`Skills:` Calligraphy, Kenjutsu (Katana), Lore: History, Lore: Theology, Perform: Storytelling, any one Lore Skill, any one Skill \n`Honor:` 6.5 \n`Outfit:` Light Armor, Sturdy Clothing, Daisho, any 1 weapon, Traveling Pack, 3 koku",
+"`Rank 1:` All Things in Time \n\n The Suzume watches the flow of combat to discern the perfect time for assault. At the beginning of the Combat Round, before the first character has taken his Turn, you may reduce your Initiative by 5 to add +1k0 to all your attack and damage rolls for the Round.",
+"`Rank 2:` Purity of Chi \n\nThe Suzume's body is filled with disdain for those who indulge in temptations away from the tenets of Bushido. You add +5 to your Armor TN against creatures and against human opponents with lower Honor.",
+"`Rank 3:` Wisdom is the Greatest Weapon\n\nThe Suzume is a masterful storyteller, captivating audiences with his words. You may spend a Void Point to add your Honor Rank to any Perform or Lore Skill Roll.",
+"`Rank 4:` Quiet Spirit, Steady Blade \n\nthe serenity of a Sparrow is often mistaken for complacency, but that is far from the case. You may make melee attacks as a Simple Action instead of a Complex Action while in the Attack Stance.",
+"`Rank 5:` Slow and Deadly \n\nThe Suzume strikes when his foes least expect it, even if he must weather the worst of the opponents' attacks. During the Round following your adoption of the Center Stance, you add +10 to your attack and damage rolls. You do not gain this benefit during iaijutsu duels."]);
+
+	//robot.registerSchool( "", "");
+
+}

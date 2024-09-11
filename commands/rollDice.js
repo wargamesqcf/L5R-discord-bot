@@ -89,6 +89,18 @@ module.exports = (robot) =>
 			}
 		}
 
+	 //cull extra kept dice
+		if( currPool.keptDice > currPool.rolledDice) 
+		{
+			if ( currPool.rolledDice == 10 )
+			{
+				currPool.bonus += ( currPool.keptDice - 10) * 2;
+				currPool.keptDice = 10;
+			}
+			else
+			{	currPool.keptDice = currPool.rolledDice;	}
+		}
+
 	  //Roll the dice
 		for (let r = 0; r < currPool.rolledDice; r++)
 			{	currPool.pool.push( roll( currPool.explodeOn, currPool.emphasis ) );	}
